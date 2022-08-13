@@ -1,0 +1,39 @@
+.full-reg-contracts-container, .limited-reg-contracts-container{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.contract{
+    text-align:center;
+    display: inline-block;
+    width: 30vw;
+    margin: 1rem;
+}
+
+img{
+    height: 40vh;
+    width: 30vw;
+    border: 10px solid #5b0e2d;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .full-reg-contracts-container{
+        flex-direction: column;
+        margin: auto;
+    }
+    .limited-reg-contracts-container{
+        flex-direction: column;
+        margin: auto;
+    }
+    .contract{
+        width: 80vw;
+        margin: auto;
+    }
+
+    img{
+        width: 80vw;
+    }
+}

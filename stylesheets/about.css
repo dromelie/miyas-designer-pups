@@ -1,0 +1,54 @@
+.about-container{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.image-container{
+    width: 50vw;
+    height: 45vh;
+    padding: 1rem;
+}
+
+hr{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width:80vw;
+}
+
+.image-container img{
+    position: relative;
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+}
+
+.text-container{
+    width: 50vw;
+    height: 45vh;
+    font-size: 2rem;
+    padding: 1rem;
+    overflow-wrap: break-word;
+}
+
+.text-container p{
+    width: 85%;
+    height: 85%;
+}
+
+@media screen and (max-width: 600px) {
+    .about-container{
+        flex-direction: column;
+        margin: 0em;
+    }
+
+    .text-container{
+        font-size: 22px;
+        width: 100vw;
+    }
+    .image-container{
+        width: 100vw;
+    }
+
+}
